@@ -344,16 +344,16 @@ nav {
   
   a {
     text-decoration: none;
-    color: rgb(241, 204, 204);
+    color: #cdcdcd;
   }
   
   a:hover {
-    color: #005346;
+    color: #00735C;
     font-weight: 600;
   }
   
   .social-icons a {
-    color: rgb(196, 137, 137);
+    color: #cdcdcd;
     line-height: 30px;
     font-size: 30px;
     margin: 0 5px;
@@ -375,6 +375,7 @@ nav {
   .social-icons a:hover i {
     box-shadow: 0px 0px 150px #005346;
     z-index: 2;
+    color: #005346;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
