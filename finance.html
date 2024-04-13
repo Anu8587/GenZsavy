@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.tradingview-widget-container{
+   margin: 35px 125px; !important
+}
+</style>
+</head>
+<body>
+  <!-- Finlogix Widget BEGIN-->
+<div class="finlogix-container"></div>
+<script type="text/javascript" src="https://widget.finlogix.com/Widget.js"></script>
+<script type="text/javascript">
+		Widget.init({
+				widgetId: "ffcafff2-6350-4145-bc1b-7a4b96d020bb",
+				type: "StripBar",
+				language: "en",
+				symbolPairs: [
+								{
+												symbolId: "10029",
+												symbolName: "Microsoft"
+								},
+								{
+												symbolId: "20070",
+												symbolName: "Infosys"
+								},
+								{
+												symbolId: "20199",
+												symbolName: "AXISCapital"
+								},
+								{
+												symbolId: "10007",
+												symbolName: "Apple"
+								},
+								{
+												symbolId: "20281",
+												symbolName: "ICICI Bank Ltd"
+								},
+								{
+												symbolId: "83",
+												symbolName: "INDIA50"
+								},
+								{
+												symbolId: "20273",
+												symbolName: "HDFC Bank Limited"
+								}
+				],
+				isAdaptive: true
+		});
+</script>
+<!-- Finlogix Widget END-->
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+  {
+  "feedMode": "all_symbols",
+  "isTransparent": true,
+  "displayMode": "regular",
+  "width": "1000",
+  "height": "550",
+  "colorTheme": "light",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+  {
+  "exchanges": [],
+  "dataSource": "SPX500",
+  "grouping": "sector",
+  "blockSize": "market_cap_basic",
+  "blockColor": "change",
+  "locale": "en",
+  "symbolUrl": "",
+  "colorTheme": "light",
+  "hasTopBar": false,
+  "isDataSetEnabled": false,
+  "isZoomEnabled": true,
+  "hasSymbolTooltip": true,
+  "width": 1000,
+  "height": 500
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+</body>
+</html>

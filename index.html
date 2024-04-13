@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GenZSavy</title>
     <link rel="stylesheet" href="style.css">
+       
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,6 +17,9 @@
         </style>
         <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
 </head>
 <body>
@@ -24,8 +28,8 @@
     <div class="container list">
         <div class="left-side">
             <a href="#home">Home</a>
-            <a href="#tracker">Tracker</a>
-            <a href="#finance">Finance</a>
+            <a href="/trackers.html">Tracker</a>
+            <a href="/finance.html">Finance</a>
         </div>
         <div class="right-side list">
             <a href="#login" class="button">Login</a>
@@ -38,12 +42,15 @@
     <section id="home">
         <div class="container">
             <div class="content">
-              <h1 id="hero">Welcome to GenZSavy</h1>
-            <h1>Unlock your<i> <b>Finance </b></i>Potential</h1>
+              <h1 id="hero"><b>Welcome to GenZSavy</b></h1>
+            <h1>Take Control of Your  <b> Finances </b></h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores doloremque ducimus officia nulla autem expedita rem dignissimos quae, error accusamus voluptatem architecto odio reprehenderit?
+              GenZSavy is here to help you navigate the world of personal finance with confidence and ease. Whether you're just starting your financial journey or looking to enhance your investment knowledge, our platform offers the tools and resources you need to succeed.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id rerum ipsam est quia, ut recusandae repudiandae sit veritatis aliquid quaerat eius vel exercitationem nam nisi vitae voluptatibus quidem in? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quod, fuga molestias dolores non perspiciatis?</p>
+            <p>Take the first step towards a brighter financial future today.</p>
+            <button class="custom-btn btn">
+              <a>Get Started</a>
+            </button>
             <!-- <div class="frame">
                 <button class="custom-btn btn">
                   <a href="Join/join.html">Chat with  us</a>
@@ -58,14 +65,14 @@
       <section>
         <div class=" ai container">
             <div class="content">
-              <h1>Personalized AI</h1>
+              <h1>Get Instant Answers to Your Financial Questions</h1>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore quod, et cupiditate officia quaerat dignissimos. Iste iusto soluta, eveniet quis veniam recusandae hic, obcaecati cumque quia, ab adipisci totam nulla asperiores ut. Eum?
+                Introducing Many, your dedicated personal finance assistant available 24/7 to answer all your financial queries. 
               </p>
               <p></p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, odit.
+               
               </p>
               <div class="frame">
                 <button class="custom-btn btn">
@@ -117,12 +124,12 @@
   </div>
   <!-- TradingView Widget END -->
         <div class="content">
-        <h1>Lorem ipsum dolor sit amet..</h1>
+        <h1>Real Time Market Analysis</h1>
         <hr>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores doloremque ducimus officia nulla autem expedita rem dignissimos quae, error accusamus voluptatem architecto odio reprehenderit?
+          Stay informed about the latest trends and developments in the financial markets with our real-time market analysis. Our team of experts monitors market movements around the clock to provide you with timely insights and actionable recommendations.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id rerum ipsam est quia, ut recusandae repudiandae sit veritatis aliquid quaerat eius vel </p>
+        <p>Receive live updates on market trends, news events, and economic indicators as they happen. Our real-time market analysis keeps you up to date with the latest developments.</p>
         
       </div>
     </div>
@@ -139,12 +146,12 @@
       <section>
         <div class=" trends container">
             <div class="content">
-              <h1>Personalized AI</h1>
+              <h1>Safe Investment Options</h1>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore quod, et cupiditate officia quaerat dignissimos. Iste iusto soluta, eveniet quis veniam recusandae hic, obcaecati cumque quia, ab adipisci totam nulla asperiores ut. Eum?
+                When it comes to investing, safety and security are paramount. That's why we've curated a selection of safe investment options designed to help you grow your wealth while minimizing risk. Whether you're a novice investor or a seasoned pro, our safe investing options offer peace of mind and steady returns.
               </p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt consequatur cum veniam autem, expedita accusantium dolor quia, temporibus nostrum in quibusdam fuga maxime.</p>
+              <p></p>
               
             </div>
             <!-- TradingView Widget BEGIN -->
@@ -283,6 +290,25 @@
   <!-- TradingView Widget END -->
           </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 </main>
 
 <!-- Side Botpress Widget -->
@@ -298,6 +324,9 @@
     <!-- Replace "YOUR_BOTPRESS_WIDGET_CODE" with the actual widget code -->
     <script src="https://mediafiles.botpress.cloud/2cd7c042-9524-4f72-b03a-de644abb3db6/webchat/bot.html " data-botId="YOUR_BOT_ID"></script>
   </div>
+
+
+
 
   <footer>
     <div class="footer-container">
@@ -320,20 +349,6 @@
       <div class="footer-content">
         <h3>Follow Us</h3>
 
-        <!-- <div class="social-icons">
-            <a href="#" title="facebook">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
-            <a href="#" title="twitter">
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            </a>
-            <a href="#" title="instagram">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="#" title="linkedin">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-          </div> -->
           <ul class="social-icons">
   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -347,10 +362,19 @@
       <p>&copy; All rights reserved</p>
     </div>
   </footer>
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="/js/script.js"></script>
+
+
+
 <script>
 ScrollReveal().reveal('.trends', { delay: 500 , origin: 'left'});
 ScrollReveal().reveal('.trends', { delay: 500 , origin: 'left'});
 </script>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/538e1408-05d8-484c-a674-de414e8fc681/webchat/config.js" defer></script>
 
 </body>
 </html>
